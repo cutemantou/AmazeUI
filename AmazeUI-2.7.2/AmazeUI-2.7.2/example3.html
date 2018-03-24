@@ -1,0 +1,834 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>常用组件</title>
+
+  <!-- Set render engine for 360 browser指定网页使用 webkit 引擎渲染 -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp禁止百度转码-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
+  href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+<div class="am-container">
+    <h3>1.小徽章</h3>
+    <p>1.1小徽章-默认样式</p>
+    <span class="am-badge">1</span>
+    <span class="am-badge am-badge-primary">2</span>
+    <span class="am-badge am-badge-secondary">3</span>
+    <span class="am-badge am-badge-success">4</span>
+    <span class="am-badge am-badge-warning">5</span>
+    <span class="am-badge am-badge-danger">6</span>
+    <span class="am-badge am-badge-success">Allmobilize</span>
+    <br>
+    <a class="am-badge am-badge-primary">Free</a>
+    <a class="am-badge am-badge-secondary">Secondary</a>
+    <a class="am-badge am-badge-success">Success</a>
+    <a class="am-badge am-badge-warning">Warning</a>
+    <a class="am-badge am-badge-danger">Danger</a>
+    <p>1.2小徽章-圆角样式</p>
+    <span class="am-badge am-radius">1</span>
+    <span class="am-badge am-badge-primary am-radius">2</span>
+    <span class="am-badge am-badge-secondary am-radius">3</span>
+    <span class="am-badge am-badge-success am-radius">4</span>
+    <span class="am-badge am-badge-warning am-radius">5</span>
+    <span class="am-badge am-badge-danger am-radius">6</span>
+    <span class="am-badge am-badge-success am-radius">Allmobilize</span>
+    <br>
+    <a class="am-badge am-badge-primary am-radius">Free</a>
+    <a class="am-badge am-badge-secondary am-radius">Secondary</a>
+    <a class="am-badge am-badge-success am-radius">Success</a>
+    <a class="am-badge am-badge-warning am-radius">Warning</a>
+    <a class="am-badge am-badge-danger am-radius">Danger</a>
+    <p>1.3小徽章-椭圆样式</p>
+    <span class="am-badge am-round">1</span>
+    <span class="am-badge am-badge-primary am-round">2</span>
+    <span class="am-badge am-badge-secondary am-round">3</span>
+    <span class="am-badge am-badge-success am-round">4</span>
+    <span class="am-badge am-badge-warning am-round">5</span>
+    <span class="am-badge am-badge-danger am-round">6</span>
+    <span class="am-badge am-badge-success am-round">Allmobilize</span>
+    <br>
+    <a class="am-badge am-badge-primary am-round">Free</a>
+    <a class="am-badge am-badge-secondary am-round">Secondary</a>
+    <a class="am-badge am-badge-success am-round">Success</a>
+    <a class="am-badge am-badge-warning am-round">Warning</a>
+    <a class="am-badge am-badge-danger am-round">Danger</a>
+    <p>1.4小徽章-大小</p>
+    <span class="am-badge am-badge-primary">default</span>
+    <span class="am-badge am-badge-secondary am-text-sm">small</span>
+    <span class="am-badge am-badge-success am-text-default">normal</span>
+    <span class="am-badge am-badge-warning am-text-lg">large</span>
+    <span class="am-badge am-badge-danger am-text-xl">x large</span>
+    <h3>2.面包屑导航</h3>
+    <p>2.1面包屑导航-默认分隔符</p>
+    <ol class="am-breadcrumb">
+      <li><a href="#">首页</a></li>
+      <li><a href="#">分类</a></li>
+      <li class="am-active">内容</li>
+    </ol>
+    <p>2.2面包屑导航-斜杆分隔符</p>
+    <ol class="am-breadcrumb am-breadcrumb-slash">
+      <li><a href="#">首页</a></li>
+      <li><a href="#">分类</a></li>
+      <li class="am-active">内容</li>
+    </ol>
+    <p>2.3面包屑导航-结合icon</p>
+    <ol class="am-breadcrumb">
+      <li><a href="#" class="am-icon-home">首页</a></li>
+      <li><a href="#">分类</a></li>
+      <li class="am-active">内容</li>
+    </ol>
+    <h3>3.按钮组</h3>
+    <p>3.1基本使用</p>
+    <div class="am-btn-group">
+       <button type="button" class="am-btn am-btn-default">左手</button>
+       <button type="button" class="am-btn am-btn-primary am-radius">左手</button>
+       <button type="button" class="am-btn am-btn-primary am-round">左手</button>
+    </div>
+    <p>3.2按钮工具栏</p>
+    <div class="am-btn-toolbar">
+      <div class="am-btn-group">
+        <button type="button" class="am-btn am-btn-primary"><i class="am-icon-align-left"></i></button>
+        <button type="button" class="am-btn am-btn-primary"><i class="am-icon-align-center"></i></button>
+        <button type="button" class="am-btn am-btn-primary"><i class="am-icon-align-right"></i></button>
+        <button type="button" class="am-btn am-btn-primary"><i class="am-icon-align-justify"></i></button>
+      </div>
+    </div>
+    <p>3.3按钮组大小</p>
+    <div class="am-btn-toolbar">
+      <div class="am-btn-group am-btn-group-lg">
+         <button type="button" class="am-btn am-btn-default">左手 lg</button>
+         <button type="button" class="am-btn am-btn-default">猪手 lg</button> 
+         <button type="button" class="am-btn am-btn-default">右手 lg</button>
+       </div>
+       <div class="am-btn-group am-btn-group">
+         <button type="button" class="am-btn am-btn-default">左手 lg</button>
+         <button type="button" class="am-btn am-btn-default">猪手 lg</button> 
+         <button type="button" class="am-btn am-btn-default">右手 lg</button>
+       </div>
+       <div class="am-btn-group am-btn-group-sm">
+         <button type="button" class="am-btn am-btn-default">左手 lg</button>
+         <button type="button" class="am-btn am-btn-default">猪手 lg</button> 
+         <button type="button" class="am-btn am-btn-default">右手 lg</button>
+       </div>
+       <div class="am-btn-group am-btn-group-xs">
+         <button type="button" class="am-btn am-btn-default">左手 lg</button>
+         <button type="button" class="am-btn am-btn-default">猪手 lg</button> 
+         <button type="button" class="am-btn am-btn-default">右手 lg</button>
+       </div>
+     </div>
+     <p>3.4垂直排列</p>
+     <div class="am-btn-group-stacked">
+      <button type="button" class="am-btn am-btn-default">Button</button>
+      <button type="button" class="am-btn am-btn-default">Button</button>
+      <button type="button" class="am-btn am-btn-default">Button</button>
+    </div>
+     <p>3.5自适应宽度</p>
+     <div class="am-btn-group am-btn-group-justify">
+      <a class="am-btn am-btn-default" role="button">左手</a>
+      <a class="am-btn am-btn-default" role="button">左手</a>
+      <a class="am-btn am-btn-default" role="button">左手</a>
+    </div>
+    <p>3.6结合下拉组件使用---按钮下拉菜单</p>
+    <div class="am-btn-group">
+      <button class="am-btn am-btn-secondary">下拉按钮</button>
+      <div class="am-dropdown" data-am-dropdown>
+        <button class="am-btn am-btn-secondary am-dropdown-toggle" data-am-dropdown-toggle> <span class="am-icon-caret-down"></span></button>
+        <ul class="am-dropdown-content">
+          <li class="am-dropdown-header">标题</li>
+          <li><a href="#">快乐的方式不只一种</a></li>
+          <li class="am-active"><a href="#">最荣幸是</a></li>
+          <li><a href="#">谁都是造物者的光荣</a></li>
+          <li class="am-disabled"><a href="#">就站在光明的角落</a></li>
+          <li class="am-divider"></li>
+          <li><a href="#">天空海阔 要做最坚强的泡沫</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>3.6结合下拉组件使用---按钮上拉菜单</p>
+    <div class="am-btn-group">
+      <button class="am-btn am-btn-secondary">上拉按钮</button>
+      <div class="am-dropdown am-dropdown-up" data-am-dropdown>
+        <button class="am-btn am-btn-secondary am-dropdown-toggle" data-am-dropdown-toggle> <span class="am-icon-caret-up"></span></button>
+        <ul class="am-dropdown-content">
+          <li class="am-dropdown-header">标题</li>
+          <li><a href="#">快乐的方式不只一种</a></li>
+          <li class="am-active"><a href="#">最荣幸是</a></li>
+          <li><a href="#">谁都是造物者的光荣</a></li>
+          <li class="am-disabled"><a href="#">就站在光明的角落</a></li>
+          <li class="am-divider"></li>
+          <li><a href="#">天空海阔 要做最坚强的泡沫</a></li>
+        </ul>
+      </div>
+    </div>
+   <h3>4.文章页</h3>
+   <article class="am-article">
+    <div class="am-article-hd">
+       <h1 class="am-article-title">永远的蝴蝶</h1>
+       <p class="am-article-meta">陈启佑（台湾）</p>
+     </div>
+     <div class="am-article-bd">
+        <p class="am-article-lead">《永远的蝴蝶》是台湾著名作家陈启佑先生的一篇小小说。这是一篇散文化的微型小说，其语言具有较强的抒情色彩，立意含蓄隽永 。作品情节很简单，写的是一个凄美的爱情故事。在一个雨天，“我”的恋人樱子自愿帮“我”到马路对面去寄信。随着一阵拔尖的刹车声，樱子年轻的生命消逝了。</p>
+        <h2>《永远的蝴蝶》原文</h2>
+        <p>那时候刚好下着雨，柏油路面湿冷冷的，还闪烁着青、黄、红颜色的灯火。我们就在骑楼下躲雨，看绿色的邮筒孤独地站在街的对面。我白色风衣的大口袋里有一封要寄给南部的母亲的信。樱子说她可以撑伞过去帮我寄信。我默默点头。</p>
+        <p>“谁叫我们只带来一把小伞哪。”她微笑着说，一面撑起伞，准备过马路帮我寄信。从她伞骨渗下来的小雨点，溅在我的眼镜玻璃上。</p>
+        <p>随着一阵拔尖的煞车声，樱子的一生轻轻地飞了起来。缓缓地，飘落在湿冷的街面上，好像一只夜晚的蝴蝶。</p>
+        <p>虽然是春天，好像已是秋深了。</p>
+        <p>她只是过马路去帮我寄信。这简单的行动，却要叫我终身难忘了。我缓缓睁开眼，茫然站在骑楼下，眼里裹着滚烫的泪水。世上所有的车子都停了下来，人潮涌向马路中央。没有人知道那躺在街面的，就是我的，蝴蝶。这时她只离我五公尺，竟是那么遥远。更大的雨点溅在我的眼镜上，溅到我的生命里来。</p>
+        <p>为什么呢？只带一把雨伞？</p>
+        <p>然而我又看到樱子穿着白色的风衣，撑着伞，静静地过马路了。她是要帮我寄信的。那，那是一封写给南部母亲的信。我茫然站在骑楼下，我又看到永远的樱子走到街心。其实雨下得并不大，却是一生一世中最大的一场雨。而那封信是这样写的，年轻的樱子知不知道呢？</p>
+        <blockquote><p>妈：我打算在下个月和樱子结婚。</p></blockquote>
+        <hr class="am-article-divider">
+           <h2>作者简介</h2>
+           <p>《永远的蝴蝶》作者陈启佑，笔名渡也、江山之助，台湾省嘉义市人，中国文化大学中国文学博士，曾任教于嘉义农专、台湾教育学院。</p>
+           <hr class="am-article-divider">
+               <h2>文章赏析</h2>
+               <h3>赏析一</h3>
+               <p>《永远的蝴蝶》就像一支低沉而哀怨的悲曲，幽幽道来，委婉动人。读罢此文，脑海中一直浮现着这样一个场景：阴雨中，樱子如蝴蝶般轻轻飞了起来，又缓缓落到了街面上。雨是冰凉的，街面是湿冷的，蝴蝶的飘飞是凄美的，又是令人伤痛的。</p>
+               <h3>赏析二</h3>
+               <p>文章有几点尤值得我们好好品味。一是作品以“雨”为线索，贯穿全文的始终。悲剧因“雨”而生，小说开篇写“雨”，正是对不幸和灾难起因的一个交代。樱子遭遇不幸后，又写“更大的雨点溅在我的眼镜上，溅到我的生命里来”，“成为一生一世的一场雨”。显然，“雨”又成为泪水和痛苦的象征。同时，以“雨”贯穿全文，也造成笼罩全文的阴冷凄凉的氛围。二是作家善于反复运用细节。如三次写到“站在骑楼下”，以此使“我”的情感思绪变化的脉络和层次更加清楚明显；两次写到樱子“穿着白色的风衣，撑着伞”，这是对“我”的心理刻画，突出了樱子美丽清纯的形象，也表达了“我”对樱子永不磨灭的爱。三是高超的谋篇布局技巧。直到作品的结尾处才告诉读者信的内容，这样构思，无疑加重了作品的悲剧色彩，让人哀痛欲绝，心不堪受。正因为作家善于谋篇布局，匠心独运，作品才有了很强的感染力。</p>
+     </div>
+   </article>
+   <h3>5.缩略图</h3>
+   <p>5.1缩略图-基本样式</p>
+   <div class="am-g">
+    <div class="am-u-sm-4"><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-1.jpg" alt=""/></div>
+    <div class="am-u-sm-4"><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-1.jpg" alt=""/></div>
+    <div class="am-u-sm-4">
+      <img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-1.jpg" alt=""/>
+    </div>
+    </div>
+    <p>5.2缩略图-带标题图</p>
+    <div class="am-g">
+      <div class="am-u-sm-4">
+        <div class="am-thumbnail">
+          <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" alt=""/>
+          <h3 class="am-thumbnail-caption">图片标题 #1</h3>
+        </div>
+      </div>
+
+      <div class="am-u-sm-4">
+        <a href="#" class="am-thumbnail">
+         <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" alt=""/>
+          <figcaption class="am-thumbnail-caption">图片标题 #2</figcaption>
+        </a>
+      </div>
+      <div class="am-u-sm-4">
+        <figure class="am-thumbnail">
+          <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" alt=""/>
+          <figcaption class="am-thumbnail-caption">图片标题 #3</figcaption>
+        </figure>
+      </div>
+    </div>
+    <p>5.3缩略图-图文混排</p>
+    <div class="am-g">
+      <div class="am-u-sm-6">
+        <div class="am-thumbnail">
+          <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" alt=""/>
+          <div class="am-thumbnail-caption">
+            <h3>图片标题</h3>
+            <p>阿凡达发送</p>
+            <p>
+              <button class="am-btn am-btn-primary">按钮</button>
+              <button class="am-btn am-btn-default">按钮</button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="am-u-sm-6">
+       <div class="am-thumbnail">
+         <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" alt=""/>
+        <div class="am-thumbnail-caption">
+          <h3>图片标题</h3>
+          <p>爱的发电风扇 </p>
+          <p>
+            <button class="am-btn am-btn-primary">按钮</button>
+            <button class="am-btn am-btn-default">按钮</button>
+          </p>
+        </div>
+      </div>
+    </div>
+   </div>
+   <h3>6.关闭按钮</h3>
+   <p>6.1关闭按钮-基本样式</p>
+   <a href="#" class="am-close">&times;</a>
+   <button type="button" class="am-close">&times;</button>
+   <p>6.2关闭按钮-带边框样式</p>
+   <a href="" class="am-close am-close-alt">&times;</a>
+   <p>6.3关闭按钮-带边框样式</p>
+   <a href="" class="am-close am-close-alt am-close-spin">&times;</a>
+   <a href="" class="am-close am-close-alt am-close-spin am-icon-times"></a>
+   <h3>7.评论列表</h3>
+   <p>7.1单条评论</p>
+   <article class="am-comment">
+      <a href="#link-to-user-home"><img src="" alt="" class="am-comment-avatar" width="48" height="48"/></a>
+      <div class="am-comment-main">
+        <header class="am-comment-hd">
+          <!--<h3 class="am-comment-title">评论标题</h3>-->
+          <div class="am-comment-meta">
+            <a href="#link-to-user" class="am-comment-author">某人</a>
+            评论于 <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">2014-7-12 15:30</time>
+          </div>
+        </header>
+      </div>
+    </article>
+    <p>7.2评论列表</p>
+    <ul class="am-comments-list am-comments-list-flip">
+      <li class="am-comment"><a href="#link-to-user-home"><img src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/96/h/96" alt="" class="am-comment-avatar" width="48" height="48"></a>
+          <div class="am-comment-main">
+              <header class="am-comment-hd">
+                  <div class="am-comment-meta">
+                      <a href="#link-to-user" class="am-comment-author">某人</a> 评论于
+                      <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">2014-7-12 15:30</time>
+                  </div>
+              </header>
+              <div class="am-comment-bd">
+                  <p>那，那是一封写给南部母亲的信。我茫然站在骑楼下，我又看到永远的樱子走到街心。其实雨下得并不大，却是一生一世中最大的一场雨。而那封信是这样写的，年轻的樱子知不知道呢？</p>
+                  <blockquote>妈：我打算在下个月和樱子结婚。</blockquote>
+              </div>
+          </div>
+      </li>
+      <li class="am-comment"><a href="#link-to-user-home"><img src="http://www.gravatar.com/avatar/1ecedeede84a44f371b9d8d656bb4265?d=mm&amp;s=96" alt="" class="am-comment-avatar" width="48" height="48"></a>
+          <div class="am-comment-main">
+              <header class="am-comment-hd">
+                  <div class="am-comment-meta"><a href="#link-to-user" class="am-comment-author">路人甲</a> 评论于
+                      <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">2014-7-13 0:03</time>
+                  </div>
+              </header>
+              <div class="am-comment-bd">
+                  <p>She's gone 我早知道
+                      <br>她将要 从我的生命中走掉
+                      <br>不再停留多一秒</p>
+              </div>
+          </div>
+      </li>
+      <li class="am-comment am-comment-primary"><a href="#link-to-user-home"><img src="http://www.gravatar.com/avatar/1ecedeede84abbf371b9d8d656bb4265?d=mm&amp;s=96" alt="" class="am-comment-avatar" width="48" height="48"></a>
+          <div class="am-comment-main">
+              <header class="am-comment-hd">
+                  <div class="am-comment-meta"><a href="#link-to-user" class="am-comment-author">路人乙</a> 评论于
+                      <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">2014-7-14 23:30</time>
+                  </div>
+              </header>
+              <div class="am-comment-bd">
+                  <p><a href="#lin-to-user">@某人</a> 撸主保重！</p>
+              </div>
+          </div>
+      </li>
+      <li class="am-comment am-comment-flip am-comment-secondary"><a href="#link-to-user-home"><img src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/96/h/96" alt="" class="am-comment-avatar" width="48" height="48"></a>
+          <div class="am-comment-main">
+              <header class="am-comment-hd">
+                  <div class="am-comment-meta"><a href="#link-to-user" class="am-comment-author">某人</a> 评论于
+                      <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">2014-7-14 23:301</time>
+                  </div>
+              </header>
+              <div class="am-comment-bd">
+                  <p><a href="#lurenyi">@路人乙</a> 朕知道了！</p>
+              </div>
+          </div>
+      </li>
+      <li class="am-comment am-comment-highlight"><a href="#link-to-user-home"><img src="http://www.gravatar.com/avatar/1ecedeede84abbf371b9d8d656bb4265?d=mm&amp;s=96" alt="" class="am-comment-avatar" width="48" height="48"></a>
+          <div class="am-comment-main">
+              <header class="am-comment-hd">
+                  <div class="am-comment-meta"><a href="#link-to-user" class="am-comment-author">路人乙</a> 评论于
+                      <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">2014-7-14 23:32</time>
+                  </div>
+              </header>
+              <div class="am-comment-bd">
+                  <p><a href="#lin-to-user">@某人</a> 艹民告退！</p>
+              </div>
+          </div>
+      </li>
+      <li class="am-comment am-comment-flip am-comment-danger"><a href="#link-to-user-home"><img src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/96/h/96" alt="" class="am-comment-avatar" width="48" height="48"></a>
+          <div class="am-comment-main">
+              <header class="am-comment-hd">
+                  <div class="am-comment-meta"><a href="#link-to-user" class="am-comment-author">某人</a> 评论于
+                      <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">2014-7-14 23:301</time>
+                  </div>
+              </header>
+              <div class="am-comment-bd">
+                  <p><a href="#lurenyi">@路人乙</a> 滚！</p>
+              </div>
+          </div>
+      </li>
+      <li class="am-comment am-comment-warning"><a href="#link-to-user-home"><img src="http://www.gravatar.com/avatar/1ecedeede84abbf371b9d8d656bb4265?d=mm&amp;s=96" alt="" class="am-comment-avatar" width="48" height="48"></a>
+          <div class="am-comment-main">
+              <header class="am-comment-hd">
+                  <div class="am-comment-meta"><a href="#link-to-user" class="am-comment-author">路人乙</a> 评论于
+                      <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">2014-7-14 23:32</time>
+                  </div>
+              </header>
+              <div class="am-comment-bd">
+                  <p><a href="#lin-to-user">@某人</a> 你妹！</p>
+              </div>
+          </div>
+      </li>
+      <li class="am-comment am-comment-flip am-comment-success"><a href="#link-to-user-home"><img src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/96/h/96" alt="" class="am-comment-avatar" width="48" height="48"></a>
+          <div class="am-comment-main">
+              <header class="am-comment-hd">
+                  <div class="am-comment-meta"><a href="#link-to-user" class="am-comment-author">某人</a> 评论于
+                      <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">2014-7-14 23:301</time>
+                  </div>
+              </header>
+              <div class="am-comment-bd">
+                  <p><a href="#lurenyi">@路人乙</a> 你妹你妹！</p>
+              </div>
+          </div>
+      </li>
+    </ul>
+    <h3>8.进度条</h3>
+    <p>8.1进度条-基本样式</p>
+    <div class="am-progress"><div class="am-progress-bar" style="width: 30%"></div></div>
+    <div class="am-progress"><div class="am-progress-bar" style="width: 40%">40%</div></div>
+    <p>8.2进度条-进度条颜色</p>
+    <div class="am-progress"><div class="am-progress-bar" style="width: 15%"></div></div>
+    <div class="am-progress"><div class="am-progress-bar am-progress-bar-secondary" style="width: 30%"></div></div>
+    <div class="am-progress"><div class="am-progress-bar am-progress-bar-success" style="width: 45%"></div></div>
+    <div class="am-progress"><div class="am-progress-bar am-progress-bar-warning" style="width: 60%"></div></div>
+    <div class="am-progress"><div class="am-progress-bar am-progress-bar-danger" style="width: 75%"></div></div>
+    <p>8.3进度条-进度条高度</p>
+    <div class="am-progress am-progress-xs"><div class="am-progress-bar" style="width: 80%"></div></div>
+    <div class="am-progress am-progress-sm"><div class="am-progress-bar" style="width: 60%"></div></div>
+    <div class="am-progress"><div class="am-progress-bar" style="width: 40%"></div> </div>
+    <p>8.4进度条-进度条动画</p>
+    <div class="am-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-danger" style="width: 80%"></div></div>
+    <div class="am-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-warning" style="width: 60%"></div></div>
+    <div class="am-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-success" style="width: 45%"></div></div>
+    <div class="am-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-secondary" style="width: 30%"></div></div>
+    <div class="am-progress am-progress-striped"><div class="am-progress-bar" style="width: 15%"></div></div>
+    <p>8.5进度条-进度条堆叠</p>
+    <div class="am-progress">
+      <div class="am-progress-bar"  style="width: 65%">Male</div>
+      <div class="am-progress-bar am-progress-bar-success"  style="width: 15%">Female</div>
+      <div class="am-progress-bar am-progress-bar-warning"  style="width: 20%">Other</div>
+    </div>
+    <h3>9.面板</h3>
+    <p>9.1基本样式</p>
+    <div class="am-panel am-panel-default"><div class="am-panel-bd">这是一个基本的面板组件。</div></div>
+    <div class="am-panel am-panel-default">
+      <div class="am-panel-hd">面板标题</div>
+      <div class="am-panel-bd">
+        面板内容
+      </div>
+    </div>
+    <p>9.2带标题的面板</p>
+    <section class="am-panel am-panel-default">
+      <header class="am-panel-hd"><h3 class="am-panel-title">面板标题</h3></header>
+      <div class="am-panel-bd">面板内容</div>
+    </section>
+    <p>9.3面板颜色</p>
+    <div class="am-panel am-panel-primary">
+       <header class="am-panel-hd"><h3 class="am-panel-title">面板标题</h3></header>
+       <div class="am-panel-bd">面板内容</div>
+    </div>
+    <div class="am-panel am-panel-secondary">
+        <header class="am-panel-hd"><h3 class="am-panel-title">面板标题</h3></header>
+       <div class="am-panel-bd">面板内容</div>
+    </div>
+    <div class="am-panel am-panel-success">
+       <header class="am-panel-hd"><h3 class="am-panel-title">面板标题</h3></header>
+       <div class="am-panel-bd">面板内容</div>
+    </div>
+    <div class="am-panel am-panel-warning">
+       <header class="am-panel-hd"><h3 class="am-panel-title">面板标题</h3></header>
+       <div class="am-panel-bd">面板内容</div>
+    </div>
+    <div class="am-panel am-panel-danger">
+       <header class="am-panel-hd"><h3 class="am-panel-title">面板标题</h3></header>
+       <div class="am-panel-bd">面板内容</div>
+    </div>
+    <p>9.4面板页脚</p>
+    <section class="am-panel am-panel-default">
+      <main class="am-panel-bd">
+        面板内容
+      </main>
+      <footer class="am-panel-footer">面板页脚</footer>
+    </section>
+    <p>9.5面板群组</p>
+    <div class="doc-example">
+      <div class="am-panel-group">
+        <section class="am-panel am-panel-default">
+          <header class="am-panel-hd">面板标题</header>
+          <main class="am-panel-bd">面板内容</main>
+        </section>
+        <section class="am-panel am-panel-default">
+          <header class="am-panel-hd">面板标题</header>
+          <div class="am-panel-collapse">
+            <main class="am-panel-bd">面板内容</main>
+          </div>
+        </section>
+        <section class="am-panel am-panel-default">
+          <header class="am-panel-hd">面板标题</header>
+          <main class="am-panel-bd">面板内容</main>
+        </section>
+      </div>
+    </div>
+    <p>9.6面板嵌套表格</p>
+    <div class="doc-example">
+      <div class="am-panel am-panel-default">
+        <div class="am-panel-hd">
+          <h3 class="am-panel-title">面板标题</h3>
+        </div>
+        <div class="am-panel-bd">这里是面板其他内容。</div>
+        <table class="am-table">
+          <thead><tr><th>名称</th><th>网址</th><th>创建时间</th></tr></thead>
+          <tbody>
+             <tr><td>Amaze UI</td><td>amazeui.org</td><td>2014-01-01</td></tr>
+             <tr><td>Amaze UI</td><td>amazeui.org</td><td>2014-01-01</td></tr>
+             <tr><td>Amaze UI</td><td>amazeui.org</td><td>2014-01-01</td></tr>
+          </tbody>
+        </table>
+        <div class="am-panel-footer">面板页脚</div>
+      </div>
+    </div>
+    <p>9.7面板嵌套列表</p>
+    <div class="doc-example">
+      <div class="am-panel am-panel-default">
+        <div class="am-panel-hd">
+          <h3 class="am-panel-title">面板标题</h3>
+        </div>
+        <div class="am-panel-bd">这里是面板其他内容。</div>
+        <ul class="am-list am-list-static">
+          <li>每个人都有一个死角， 自己走不出来，别人也闯不进去。</li>
+          <li>我把最深沉的秘密放在那里。</li>
+          <li>你不懂我，我不怪你。</li>
+          <li>每个人都有一道伤口， 或深或浅，盖上布，以为不存在。</li>
+        </ul>
+        <div class="am-panel-footer">面板页脚</div>
+      </div>
+    </div>
+    <h3>10.分页</h3>
+    <p>10.1基本样式</p>
+    <ul class="am-pagination">
+      <li class="am-disabled"><a href="#">&laquo;</a></li>
+      <li class="am-active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">&raquo;</a></li>
+    </ul>
+    <hr />
+    <ul class="am-pagination">
+      <li><a href="">&laquo; Prev</a></li>
+      <li><a href="">Next &raquo;</a></li>
+    </ul>
+    <p>10.2对齐方式</p>
+    <ul class="am-pagination am-pagination-centered">
+      <li class="am-disabled"><a href="#">&laquo;</a></li>
+      <li class="am-active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">&raquo;</a></li>
+    </ul>
+    <ul class="am-pagination am-pagination-right">
+      <li class="am-disabled"><a href="#">&laquo;</a></li>
+      <li class="am-active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">&raquo;</a></li>
+    </ul>
+    <ul class="am-pagination">
+      <li class="am-pagination-prev"><a href="">&laquo; Prev</a></li>
+      <li class="am-pagination-next"><a href="">Next &raquo;</a></li>
+    </ul>
+    <p>10.3结合图标使用</p>
+    <ul class="am-pagination">
+      <li><a href=""><span class="am-icon-angle-double-left"></span></a></li>
+      <li><span>...</span></li>
+      <li><a href=""><span class="am-icon-angle-double-right"></span></a></li>
+    </ul>
+    <h3>11.列表</h3>
+    <p>11.1列表-基本样式</p>
+    <ul class="am-list">
+      <li><a href="#">每个人都有一个死角， 自己走不出来，别人也闯不进去。</a></li>
+      <li><a href="#">我把最深沉的秘密放在那里。</a></li>
+      <li><a href="#">你不懂我，我不怪你。</a></li>
+      <li><a href="#">每个人都有一道伤口， 或深或浅，盖上布，以为不存在。</a></li>
+    </ul>
+    <!-- 文字超出截断为「...」 -->
+    <p>文字超出截断为「...」</p>
+    <ul class="am-list">
+      <li><a href="#" class="am-text-truncate">每个人都有一个死角， 自己走不出来，别人也闯不进去。我把最深沉的秘密放在那里。每个人都有一道伤口， 或深或浅，盖上布，以为不存在。</a></li>
+    </ul>
+    <ul class="am-list am-list-static">
+      <li><a href="#">每个人都有一个死角， 自己走不出来，别人也闯不进去。</a></li>
+      <li><a href="#">我把最深沉的秘密放在那里。</a></li>
+      <li><a href="#">你不懂我，我不怪你。</a></li>
+      <li><a href="#">每个人都有一道伤口， 或深或浅，盖上布，以为不存在。</a></li>
+    </ul>
+    <ul class="am-list am-list-static am-list-border">
+      <li><a href="#">每个人都有一个死角， 自己走不出来，别人也闯不进去。</a></li>
+      <li><a href="#">我把最深沉的秘密放在那里。</a></li>
+      <li><a href="#">你不懂我，我不怪你。</a></li>
+      <li><a href="#">每个人都有一道伤口， 或深或浅，盖上布，以为不存在。</a></li>
+    </ul>
+    <ul class="am-list am-list-border">
+      <li><a href="#">每个人都有一个死角， 自己走不出来，别人也闯不进去。</a></li>
+      <li><a href="#">我把最深沉的秘密放在那里。</a></li>
+      <li><a href="#">你不懂我，我不怪你。</a></li>
+      <li><a href="#">每个人都有一道伤口， 或深或浅，盖上布，以为不存在。</a></li>
+    </ul>
+    <ul class="am-list am-list-static am-list-border am-list-striped">
+      <li><a href="#">每个人都有一个死角， 自己走不出来，别人也闯不进去。</a></li>
+      <li><a href="#">我把最深沉的秘密放在那里。</a></li>
+      <li><a href="#">你不懂我，我不怪你。</a></li>
+      <li><a href="#">每个人都有一道伤口， 或深或浅，盖上布，以为不存在。</a></li>
+    </ul>
+    <ul class="am-list am-list-static am-list-border">
+      <li><span class="am-badge am-badge-success">YES</span> <span class="am-badge am-badge-danger">NO</span>每个人都有一个死角， 自己走不出来，别人也闯不进去。</li>
+    </ul>
+    <ul class="am-list am-list-static am-list-border">
+      <li>
+        <i class="am-icon-home am-icon-fw"></i>
+        每个人都有一个死角， 自己走不出来，别人也闯不进去。</li>
+      <li>
+        <i class="am-icon-book am-icon-fw"></i>
+        我把最深沉的秘密放在那里。</li>
+      <li><i class="am-icon-pencil am-icon-fw"></i>你不懂我，我不怪你。</li>
+    </ul>
+
+    <ul class="am-list am-list-border">
+      <li><a href="#"><i class="am-icon-home am-icon-fw"></i>
+        每个人都有一个死角， 自己走不出来，别人也闯不进去。</a></li>
+      <li><a href="#"> <i class="am-icon-book am-icon-fw"></i>
+        我把最深沉的秘密放在那里。</a></li>
+      <li><a href="#"><i class="am-icon-pencil am-icon-fw"></i>你不懂我，我不怪你。</a></li>
+    </ul>
+    <h3>12.导航、导航条</h3>
+    <ul class="am-nav">
+      <li class="am-active"><a href="#">首页</a></li>
+      <li><a href="#">开始使用</a></li>
+      <li><a href="#">按需定制</a></li>
+    </ul>
+    <ul class="am-nav am-nav-pills">
+      <li class="am-active"><a href="#">首页</a></li>
+      <li><a href="#">开始使用</a></li>
+      <li><a href="#">按需定制</a></li>
+    </ul>
+    <ul class="am-nav am-nav-tabs">
+      <li class="am-active"><a href="#">首页</a></li>
+      <li><a href="#">开始使用</a></li>
+      <li><a href="#">按需定制</a></li>
+    </ul>
+    <ul class="am-nav am-nav-pills am-nav-justify">
+      <li class="am-active"><a href="#">首页</a></li>
+      <li><a href="#">开始使用</a></li>
+      <li><a href="#">按需定制</a></li>
+      <li><a href="#">加入我们</a></li>
+    </ul>
+
+    <ul class="am-nav am-nav-tabs am-nav-justify">
+      <li class="am-active"><a href="#">首页</a></li>
+      <li><a href="#">开始使用</a></li>
+      <li><a href="#">加入我们</a></li>
+    </ul>
+
+    <ul class="am-nav am-nav-pills">
+      <li class="am-active"><a href="#">首页</a></li>
+      <li><a href="#">关于我们</a></li>
+      <li class="am-disabled"><a href="#">禁用链接</a></li>
+    </ul>
+    <ul class="am-nav">
+      <li><a href="#">首页</a></li>
+      <li class="am-nav-header">开始使用</li>
+      <li><a href="#">关于我们</a></li>
+      <li><a href="#">联系我们</a></li>
+      <li class="am-nav-divider"></li>
+      <li><a href="#">响应式</a></li>
+      <li><a href="#">移动优先</a></li>
+    </ul>
+    <ul class="am-nav am-nav-pills">
+      <li class="am-active"><a href="#">首页</a></li>
+      <li><a href="#">关于我们</a></li>
+      <li class="am-disabled"><a href="#">禁用链接</a></li>
+    </ul>
+    <ul class="am-nav">
+      <li><a href="#">首页</a></li>
+      <li class="am-nav-header">开始使用</li>
+      <li><a href="#">关于我们</a></li>
+      <li><a href="#">联系我们</a></li>
+      <li class="am-nav-divider"></li>
+      <li><a href="#">响应式</a></li>
+      <li><a href="#">移动优先</a></li>
+     </ul>
+     <ul class="am-nav am-nav-pills">
+        <li class="am-active"><a href="#">首页</a></li>
+        <li><a href="#">项目</a></li>
+        <li class="am-dropdown" data-am-dropdown>
+            <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                菜单 <span class="am-icon-caret-down"></span>
+            </a>
+            <ul class="am-dropdown-content">
+                <li class="am-dropdown-header">Header</li>
+                <li><a href="#">1. 一行代码，简单快捷</a></li>
+                <li class="am-active"><a href="#">2. 网址不变且唯一</a></li>
+                <li><a href="#">3. 内容实时同步更新</a></li>
+                <li class="am-disabled"><a href="#">4. 云端跨平台适配</a></li>
+                <li class="am-divider"></li>
+                <li><a href="#">5. 专属的一键拨叫</a></li>
+              </ul>
+        </li>
+    </ul>
+    <ul class="am-nav am-nav-tabs">
+      <li class="am-active"><a href="#">首页</a></li>
+      <li><a href="#">项目</a></li>
+      <li class="am-dropdown" data-am-dropdown>
+        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+          菜单 <span class="am-icon-caret-down"></span>
+        </a>
+        <ul class="am-dropdown-content">
+          ...
+        </ul>
+      </li>
+    </ul>
+    <h3>13.输入框组</h3>
+    <div class="am-input-group" style="margin-top:10px;">
+      <span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>
+      <input type="text" class="am-form-field" placeholder="Username">
+    </div>
+    <div class="am-input-group" style="margin-top:10px;">
+      <span class="am-input-group-label"><i class="am-icon-lock am-icon-fw"></i></span>
+      <input type="text" class="am-form-field" placeholder="Password">
+    </div>
+    <div class="am-input-group" style="margin-top:10px;">
+      <input type="text" class="am-form-field">
+      <span class="am-input-group-label">.00</span>
+    </div>
+    <div class="am-input-group" style="margin-top:10px;">
+      <span class="am-input-group-label">$</span>
+      <input type="text" class="am-form-field">
+      <span class="am-input-group-label">.00</span>
+    </div>
+    <div class="am-g" style="margin-top:10px;">
+      <div class="am-u-lg-6">
+        <div class="am-input-group">
+          <span class="am-input-group-label">
+            <input type="checkbox">
+          </span>
+          <input type="text" class="am-form-field">
+        </div>
+      </div>
+      <div class="am-u-lg-6">
+        <div class="am-input-group">
+          <span class="am-input-group-label">
+            <input type="radio">
+          </span>
+          <input type="text" class="am-form-field">
+        </div>
+      </div>
+    </div>
+    <div class="am-g" style="margin-top:10px;">
+      <div class="am-u-lg-6">
+        <div class="am-input-group">
+          <span class="am-input-group-btn">
+            <button class="am-btn am-btn-default" type="button"><span class="am-icon-search"></span> </button>
+          </span>
+          <input type="text" class="am-form-field">
+        </div>
+      </div>
+      <div class="am-u-lg-6">
+        <div class="am-input-group">
+          <input type="text" class="am-form-field">
+          <span class="am-input-group-btn">
+            <button class="am-btn am-btn-default" type="button">手气还行</button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="am-input-group am-input-group-lg" style="margin-top:10px;">
+      <span class="am-input-group-label">@</span>
+      <input type="text" class="am-form-field" placeholder="Username">
+    </div>
+
+    <div class="am-input-group" style="margin-top:10px;">
+      <span class="am-input-group-label">@</span style="margin-top:10px;">
+      <input type="text" class="am-form-field" placeholder="Username">
+    </div>
+
+    <div class="am-input-group am-input-group-sm" style="margin-top:10px;">
+      <span class="am-input-group-label">@</span>
+      <input type="text" class="am-form-field" placeholder="Username">
+    </div>
+    <div class="am-input-group am-input-group-primary" style="margin-top:10px;">
+      <span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>
+      <input type="text" class="am-form-field" placeholder="你的大名">
+    </div>
+
+    <div class="am-g" style="margin-top:10px;">
+      <div class="am-u-lg-6">
+        <div class="am-input-group am-input-group-danger">
+          <span class="am-input-group-label">
+            <input type="checkbox">
+          </span>
+          <input type="text" class="am-form-field">
+        </div>
+      </div>
+      <div class="am-u-lg-6">
+        <div class="am-input-group am-input-group-primary">
+          <span class="am-input-group-btn">
+            <button class="am-btn am-btn-primary" type="button"><span class="am-icon-search"></span></button>
+          </span>
+          <input type="text" class="am-form-field">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+
+</body>
+</html>
